@@ -2,6 +2,17 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <script type="text/javascript">
+    // if (window.location.href.indexOf('https://www.ftandy.com') != 0 && window.location.href.indexOf("http://localhost:4000/") != 0) {
+    //   window.location.href = 'https://www.ftandy.com';
+    // }
+  </script>
+  <!-- <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+  </script> -->
+  <script src="https://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
   <%
   var title = page.title;
 
@@ -36,4 +47,5 @@
   <% if( theme.customstylesheet ){ %>
     <%- css('css/'+theme.customstylesheet) %>
   <% } %>
+  <link rel='stylesheet' href='/assets/css/andy-style.css'>
 </head>
